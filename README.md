@@ -16,5 +16,5 @@ This project is not intended to show any design skills other than the bare minim
 - CSS3
 - Javascript
 
-## PROJECT
-Started.
+## STATUS
+Styling Landmarks section
