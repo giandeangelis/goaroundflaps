@@ -17,4 +17,6 @@ This project is not intended to show any design skills other than the bare minim
 - Javascript
 
 ## STATUS
-Styling Landmarks section
+- Basic dekstop styles completed
+- Responsiveness only partly implemented yet
+- Images still missing
