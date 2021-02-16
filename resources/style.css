@@ -38,25 +38,13 @@ h2 {
     color: #FFF;
     background-color: #273875;
     padding: 0.75rem;
+    position: sticky;
+    top: 4rem;
 }
 
 section {
     width: 80%;
     margin: 0 auto;
-}
-
-#landmarks-scroll {
-   display: none; 
-}
-
-.sticky {
-    position: fixed;
-    top: 4rem;
-    width: 80%;
-}
-
-.sticky + .section-intro {
-    padding-top: 4rem;
 }
 
 p.section-intro {
