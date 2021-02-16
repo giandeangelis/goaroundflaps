@@ -19,8 +19,12 @@ body {
     background-color: #f0f2ff;
 }
 
-h1, h2, p, figcaption, a {
+h1, h2, p, a {
     font-family: "Open Sans", Arial, sans-serif;
+}
+
+figcaption {
+    font-family: Ubuntu, "Open Sans", Arial, sans-serif;
 }
 
 h1 {
@@ -137,4 +141,58 @@ header h1 {
     width: 90%;
     margin: 0 10%;
     line-height: 1.3;
+}
+
+/* Airports section styles */
+.airports .approach-container {
+    margin-bottom: 5%;
+}
+
+.airports .approach {
+    display: grid;
+    grid-template: 1fr / 20% 10% 40% 10% 20%;
+}
+
+.innsbruck figcaption {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.innsbruck img {
+    grid-area: 1 / 2 / span 1 / -1;
+}
+
+.madeira img {
+    grid-area: 1 / 1 / span 1 / span 4;
+}
+
+.madeira figcaption {
+    grid-area: 1 / 4 / span 1 / -1;
+    background: linear-gradient(90deg, rgba(39,56,117,0) 0%, rgba(39,56,117,1) 25%, rgba(39,56,117,1) 100%) !important;
+    justify-content: flex-end !important;
+    text-align: right !important;
+}
+
+.lukla figcaption {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.lukla img {
+    grid-area: 1 / 2 / span 1 / -1;
+}
+
+.approach img {
+    width: 100%;
+    min-width: 600px;
+}
+
+.approach figcaption {
+    width: 100%;
+    padding: 10%;
+    background: linear-gradient(90deg, rgba(39,56,117,1) 0%, rgba(39,56,117,1) 75%, rgba(39,56,117,0) 100%);
+    color: #FFF;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 2.5;
+    text-transform: uppercase;
 }
