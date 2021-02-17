@@ -258,10 +258,6 @@ header h1 {
     grid-template: 1fr / 20% 10% 40% 10% 20%;
 }
 
-#airports .text {
-    width: 60%;
-}
-
 #innsbruck figcaption {
     grid-area: 1 / 1 / span 1 / span 2;
 }
@@ -296,7 +292,7 @@ header h1 {
 
 .approach figcaption {
     width: 100%;
-    padding: 10%;
+    padding: 15%;
     background: linear-gradient(90deg, rgba(39,56,117,1) 0%, rgba(39,56,117,1) 75%, rgba(39,56,117,0) 100%);
     color: #FFF;
     display: inline-flex;
@@ -339,10 +335,6 @@ header h1 {
         grid-area: 6 / 1 / span 1 / -1;
         padding: 2%;
         background-color: #273875;
-    }
-
-    #airports .text {
-        width: 100%;
     }
 }
 
@@ -388,6 +380,10 @@ header h1 {
     border-right: 1px solid rgba(39,56,117,0.8);
     border-bottom: 1px solid rgba(39,56,117,0.8);
     flex-grow: 1;
+}
+
+#aircraft .descriptor {
+    font-weight: 700;
 }
 
 /* Aircraft section for mobile */
