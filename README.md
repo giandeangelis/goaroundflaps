@@ -17,6 +17,5 @@ This project is not intended to show any design skills other than the bare minim
 - Javascript
 
 ## STATUS
-- Basic dekstop and some mobile styles completed
-- Nav icon transition when closing navbar on mobile version not working properly
+- Responsive styles completed. Inspect for bugs and improvements
 - Images still missing

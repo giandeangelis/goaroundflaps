@@ -351,6 +351,12 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
+    grid-gap: 1%;
+}
+
+#aircraft .box {
+    display: flex;
+    flex-direction: column;
 }
 
 #aircraft figure {
@@ -380,4 +386,17 @@ header h1 {
     border-left: 1px solid rgba(39,56,117,0.8);
     border-right: 1px solid rgba(39,56,117,0.8);
     border-bottom: 1px solid rgba(39,56,117,0.8);
+    flex-grow: 1;
+}
+
+/* Aircraft section for mobile */
+
+@media screen and (max-width: 690px) {
+    #aircraft .grid {
+        display: block;
+    }
+
+    #aircraft .box {
+        margin: 5%;
+    }
 }
