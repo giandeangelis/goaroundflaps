@@ -257,30 +257,30 @@ header h1 {
     grid-template: 1fr / 20% 10% 40% 10% 20%;
 }
 
-.innsbruck figcaption {
+#innsbruck figcaption {
     grid-area: 1 / 1 / span 1 / span 2;
 }
 
-.innsbruck img {
+#innsbruck img {
     grid-area: 1 / 2 / span 1 / -1;
 }
 
-.madeira img {
+#madeira img {
     grid-area: 1 / 1 / span 1 / span 4;
 }
 
-.madeira figcaption {
+#madeira figcaption {
     grid-area: 1 / 4 / span 1 / -1;
-    background: linear-gradient(90deg, rgba(39,56,117,0) 0%, rgba(39,56,117,1) 25%, rgba(39,56,117,1) 100%) !important;
-    justify-content: flex-end !important;
-    text-align: right !important;
+    background: linear-gradient(90deg, rgba(39,56,117,0) 0%, rgba(39,56,117,1) 25%, rgba(39,56,117,1) 100%);
+    justify-content: flex-end;
+    text-align: right;
 }
 
-.lukla figcaption {
+#lukla figcaption {
     grid-area: 1 / 1 / span 1 / span 2;
 }
 
-.lukla img {
+#lukla img {
     grid-area: 1 / 2 / span 1 / -1;
 }
 
@@ -298,6 +298,40 @@ header h1 {
     align-items: center;
     line-height: 2.5;
     text-transform: uppercase;
+}
+
+/* Airport section for mobile */
+
+@media screen and (max-width: 690px) {
+    #innsbruck img {
+        grid-area: 1 / 1 / span 1 / -1;
+    }
+
+    #innsbruck figcaption {
+        grid-area: 2 / 1 / span 1 / -1;
+        padding: 1%;
+        background-color: #273875;
+    }
+
+    #madeira img {
+        grid-area: 3 / 1 / span 1 / -1;
+    }
+
+    #madeira figcaption {
+        grid-area: 4 / 1 / span 1 / -1;
+        padding: 1%;
+        background-color: #273875;
+    }
+
+    #lukla img {
+        grid-area: 5 / 1 / span 1 / -1;
+    }
+
+    #lukla figcaption {
+        grid-area: 6 / 1 / span 1 / -1;
+        padding: 1%;
+        background-color: #273875;
+    }
 }
 
 /* Aircraft section styles */
