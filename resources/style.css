@@ -53,6 +53,7 @@ p.section-intro {
 }
 
 @media screen and (max-width: 490px) {
+    /* Remove page margins for mobile version */
     section {
         width: 100%;
     }
@@ -66,7 +67,8 @@ p.section-intro {
 
 nav {
     width: 100%;
-    height: 4rem;
+    height: 100%;
+    max-height: 4rem;
     position: fixed;
     top: 0;
     z-index: 10;
@@ -75,6 +77,8 @@ nav {
     align-items: center;
     background-color: #c4d1ff;
     border-bottom: 1px solid #273875;
+    transition-property: max-height;
+    transition-duration: 1s;
 }
 
 nav img {
@@ -101,6 +105,62 @@ nav a {
 nav a:hover {
     color: #FFF;
 }
+
+/* Hamburger icon styles */
+
+#hamburger-container {
+    margin: 5%;
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+/* Navbar for mobile */
+
+@media screen and (max-width: 690px) {
+    nav ul {
+        display: none;
+    }
+
+    #hamburger-container {
+        display: block;
+    }
+
+    nav.expand img {
+        display: none;
+    }
+
+    nav.expand {
+        max-height: 45%;
+        flex-direction: column-reverse;
+    }
+
+    nav.expand ul {
+        display: block;
+        padding: 5%;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    nav.expand .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+    }
+    
+    nav.expand .bar2 {
+        opacity: 0;
+    }
+    
+    nav.expand .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+    }
 
 /* Header styles */
 
