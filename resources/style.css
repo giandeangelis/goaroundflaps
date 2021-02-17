@@ -257,6 +257,10 @@ header h1 {
     grid-template: 1fr / 20% 10% 40% 10% 20%;
 }
 
+#airports .text {
+    width: 60%;
+}
+
 #innsbruck figcaption {
     grid-area: 1 / 1 / span 1 / span 2;
 }
@@ -272,6 +276,7 @@ header h1 {
 #madeira figcaption {
     grid-area: 1 / 4 / span 1 / -1;
     background: linear-gradient(90deg, rgba(39,56,117,0) 0%, rgba(39,56,117,1) 25%, rgba(39,56,117,1) 100%);
+    display: flex;
     justify-content: flex-end;
     text-align: right;
 }
@@ -309,7 +314,7 @@ header h1 {
 
     #innsbruck figcaption {
         grid-area: 2 / 1 / span 1 / -1;
-        padding: 1%;
+        padding: 2%;
         background-color: #273875;
     }
 
@@ -319,8 +324,10 @@ header h1 {
 
     #madeira figcaption {
         grid-area: 4 / 1 / span 1 / -1;
-        padding: 1%;
+        padding: 2%;
         background-color: #273875;
+        justify-content: flex-start;
+        text-align: left;
     }
 
     #lukla img {
@@ -329,8 +336,12 @@ header h1 {
 
     #lukla figcaption {
         grid-area: 6 / 1 / span 1 / -1;
-        padding: 1%;
+        padding: 2%;
         background-color: #273875;
+    }
+
+    #airports .text {
+        width: 100%;
     }
 }
 
